@@ -18,6 +18,7 @@ from django.urls import path
 from . import myfunction
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ha', myfunction.home),
-    path('count/', myfunction.count)
+    path('', myfunction.home),
+    path('count/', myfunction.count),
+    path('about/', myfunction.about)
 ]

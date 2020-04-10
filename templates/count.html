@@ -1,4 +1,13 @@
 <h1>统计,总字数为{{ count }}</h1>
-
-<a href="about">关于本页</a>
+<br>
+<h1>您输入的文本为：</h1>
+<br>
+{{ text }}
+<br>
+<h1>排序后的输出及字数统计为：</h1>
+<br>
+{% for word,count in sorted %}
+	{{ word }} - {{ count }}
+	<br>
+{% endfor %}
 <a href="..">返回</a>
